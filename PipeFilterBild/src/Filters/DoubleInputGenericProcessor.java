@@ -25,4 +25,11 @@ public abstract class DoubleInputGenericProcessor<SourceType1,SourceType2,Destin
      * Aufgerufen wenn die zweite Quelle keine Daten mehr zu Verarbeitung hat
      */
     public abstract void flushDoubleInputProcessor();
+    
+    /**
+	 * Called within a pull pipeline to determine from which source data should be pulled.
+	 * 
+	 * @return the index of the input pipe to pull
+	 */
+	public abstract int getMissingSource();
 }

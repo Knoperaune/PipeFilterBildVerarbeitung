@@ -11,7 +11,7 @@ import Pipes.PullPipe;
  * @author phil
  */
 public class PullFilter<SourceType, DestinationType> extends Filter<SourceType, DestinationType> {
-    private PullPipe<SourceType> _source;
+    protected PullPipe<SourceType> _source;
     
     	/**
          * Erzeugt neuen PullFilter
