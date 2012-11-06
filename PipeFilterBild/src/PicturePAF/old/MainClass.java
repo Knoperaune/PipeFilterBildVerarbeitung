@@ -2,20 +2,20 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package PicturePAF;
+package PicturePAF.old;
 
 import PicturePAF.Pipes.ImageViewerDoubleOutputPushPipe;
 import PicturePAF.Pipes.ImageViewerPullSource;
 import PicturePAF.Pipes.ImageViewerPushDest;
 import PicturePAF.Pipes.ImageViewerPullPipe;
 import PicturePAF.Pipes.ImageViewerPushPipe;
-import PicturePAF.Processor.Threshold;
-import PicturePAF.Processor.Dilate;
-import PicturePAF.Processor.POI;
-import PicturePAF.Processor.OneBand;
-import PicturePAF.Processor.Erode;
-import PicturePAF.Processor.Median;
-import PicturePAF.Processor.LogicalOr;
+import PicturePAF.old.Processor.Threshold;
+import PicturePAF.old.Processor.Dilate;
+import PicturePAF.old.Processor.POI;
+import PicturePAF.old.Processor.OneBand;
+import PicturePAF.old.Processor.Erode;
+import PicturePAF.old.Processor.Median;
+import PicturePAF.old.Processor.LogicalOr;
 import Filters.DoubleInputPullFilter;
 import Filters.DoubleInputPushFilter;
 import Filters.PullFilter;
@@ -165,7 +165,8 @@ public class MainClass {
         while (!done) {
 
             String fileName = /*"loetstellen.jpg"*/
-                        "C://Users//phil//Documents//NetBeansProjects//PipeFilterBildVerarbeitung//PipeFilterBild//src//PicturePAF//loetstellen.jpg";
+                    "C://Users//phil//Desktop//FHV//5. Semester//Systemarchitekturen//Übung//PipesAndFiltersGraphical//PipeFilterBildVerarbeitung//PipeFilterBild//src//PicturePAF//loetstellen.jpg";
+                        //"C://Users//phil//Documents//NetBeansProjects//PipeFilterBildVerarbeitung//PipeFilterBild//src//PicturePAF//loetstellen.jpg";
 
 
             PlanarImage image = JAI.create("fileload", fileName);

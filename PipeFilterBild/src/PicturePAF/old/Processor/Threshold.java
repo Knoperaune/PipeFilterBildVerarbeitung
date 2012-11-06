@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package PicturePAF.Processor;
+package PicturePAF.old.Processor;
 import Filters.GenericProcessor;
 import java.awt.image.renderable.ParameterBlock;
 

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package PicturePAF;
+package PicturePAF.old;
 import java.awt.BorderLayout;
 import java.awt.Container;
 
@@ -25,7 +25,7 @@ public class JImageViewer extends JFrame {
 	 */
 	public JImageViewer(PlanarImage image, String title) {
 
-		setTitle(title + " - Dimensions: " + image.getWidth() + "x" + image.getHeight() + " Bands:" + image.getNumBands());
+		setTitle(title + " - Dimensions: " + image.getWidth() + "x" + image.getHeight());
 
 		DisplayJAI dj = new DisplayJAI(image);
 

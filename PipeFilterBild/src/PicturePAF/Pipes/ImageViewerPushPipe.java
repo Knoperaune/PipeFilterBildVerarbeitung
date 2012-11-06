@@ -4,7 +4,7 @@
  */
 package PicturePAF.Pipes;
 import Filters.PushFilter;
-import PicturePAF.JImageViewer;
+import PicturePAF.old.JImageViewer;
 import Pipes.SinglePushPipe;
 import javax.media.jai.PlanarImage;
 /**

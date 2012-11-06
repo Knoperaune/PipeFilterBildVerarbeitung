@@ -5,7 +5,7 @@
 package PicturePAF.Pipes;
 
 import Filters.PullFilter;
-import PicturePAF.JImageViewer;
+import PicturePAF.old.JImageViewer;
 import Pipes.SinglePullPipe;
 
 import javax.media.jai.PlanarImage;
