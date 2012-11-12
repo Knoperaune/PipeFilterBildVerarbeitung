@@ -7,6 +7,7 @@ package PicturePAF;
 import Filters.PullFilter;
 import PicturePAF.Pipes.ImageViewerPullPipe;
 import PicturePAF.Pipes.ImageViewerPullSource;
+import PicturePAF.Processor.CentroidProcessor;
 import PicturePAF.Processor.DilateProcessor;
 import PicturePAF.Processor.ErodeProcessor;
 import PicturePAF.Processor.MedianProcessor;
@@ -54,7 +55,11 @@ public class Main {
         //Result with threshold
         PullFilter<PlanarImage,PlanarImage> ResultThreshold = new PullFilter<>(new ThresholdProcessor(0, 254, 0), DilatePipe);
         ImageViewerPullPipe ResultThresholdPipe = new ImageViewerPullPipe(ResultThreshold, "Dilate -> Result");
-        ResultThresholdPipe.pull();
+        
+        //Centroid
+        PullFilter<PlanarImage, PlanarImage> centroid = new PullFilter<>(new CentroidProcessor(), ResultThresholdPipe);
+        ImageViewerPullPipe centroidpipe = new ImageViewerPullPipe(centroid, "Result -> Centroid");
+        centroidpipe.pull();
         
     }
 }
