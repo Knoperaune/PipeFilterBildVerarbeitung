@@ -32,6 +32,7 @@ public class XorProcessor extends GenericProcessor<PlanarImage, PlanarImage> {
         pb.addSource(image);
         pb.addSource(original);
         addOutput(JAI.create("xor", pb));
+        JAI.create("filestore", JAI.create("xor", pb), "finishedpull.jpg", "JPEG");
     }
 
     @Override
