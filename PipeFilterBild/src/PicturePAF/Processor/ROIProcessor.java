@@ -17,7 +17,7 @@ public class ROIProcessor extends GenericProcessor<PlanarImage, PlanarImage> {
 
     @Override
     public void process(PlanarImage image) {
-        Rectangle rectangle = new Rectangle(0,50, image.getWidth(), 120);
+        Rectangle rectangle = new Rectangle(0,40, image.getWidth(), 120);
         image = PlanarImage.wrapRenderedImage((RenderedImage)image.getAsBufferedImage(rectangle, image.getColorModel()));
         addOutput(image);
     }

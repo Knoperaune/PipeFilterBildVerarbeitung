@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 package PicturePAF.Pipes;
-import PicturePAF.old.JImageViewer;
 import Pipes.PullPipe;
 import javax.media.jai.PlanarImage;
 /**
